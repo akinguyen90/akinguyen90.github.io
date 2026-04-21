@@ -1,0 +1,42 @@
+name: Update Vietnam weather
+
+on:
+  schedule:
+    # Every hour at :05 UTC. Avoids the :00 congestion on shared runners.
+    - cron: "5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-weather
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch weather
+        run: python scripts/fetch_weather.py
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain data/weather.json)" ]]; then
+            git add data/weather.json
+            git commit -m "chore(weather): update hourly snapshot [skip ci]"
+            git push
+          else
+            echo "No changes to weather data"
+          fi

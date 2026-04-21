@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vietnam Weather — Aki Nguyen</title>
+<meta name="description" content="ベトナム主要都市の現在の天気。毎時 GitHub Actions で更新。">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="./" class="site-title">Aki Nguyen</a>
+    <nav class="site-nav">
+      <a href="./">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="cv.html">CV</a>
+      <a href="weather.html" class="active">Weather</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="weather-hero">
+    <h1>Vietnam Weather</h1>
+    <p class="lead">ベトナム主要都市の現在の天気。<span id="updated-at" class="updated-at"></span></p>
+  </section>
+
+  <section id="weather-grid" class="weather-grid" aria-live="polite" aria-busy="true">
+    <p class="weather-loading">読み込み中…</p>
+  </section>
+
+  <p class="weather-attrib">
+    Data: <a href="https://open-meteo.com/" rel="noopener noreferrer">Open-Meteo</a>
+    · 毎時 GitHub Actions で自動更新
+  </p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    &copy; 2026 Aki Nguyen
+  </div>
+</footer>
+
+<script src="assets/js/weather.js" defer></script>
+
+</body>
+</html>
