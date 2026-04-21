@@ -43,3 +43,13 @@ python3 -m http.server 8000
 ```
 
 `http://localhost:8000/` にアクセス。
+
+## テスト
+
+`tests/` 以下のユニットテストは標準ライブラリの `unittest` で実行できます。
+
+```sh
+python3 -m unittest discover -s tests -v
+```
+
+`.github/workflows/test.yml` が PR ごとに自動実行します。

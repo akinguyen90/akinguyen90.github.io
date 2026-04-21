@@ -64,7 +64,10 @@ def fetch_city(city: dict) -> dict:
     }
 
 
-def main() -> int:
+DEFAULT_OUT_PATH = Path(__file__).resolve().parent.parent / "data" / "weather.json"
+
+
+def main(out_path: Path | None = None) -> int:
     results = []
     errors = 0
     for city in CITIES:
@@ -88,7 +91,7 @@ def main() -> int:
         "cities": results,
     }
 
-    out_path = Path(__file__).resolve().parent.parent / "data" / "weather.json"
+    out_path = out_path or DEFAULT_OUT_PATH
     out_path.parent.mkdir(exist_ok=True)
     out_path.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {out_path} ({len(results)} cities, {errors} errors)")
