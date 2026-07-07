@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07T20:55:06+00:00",
+  "updated_at": "2026-07-07T22:18:47+00:00",
   "source": "https://open-meteo.com/",
   "cities": [
     {
@@ -8,64 +8,64 @@
       "lat": 21.0285,
       "lon": 105.8542,
       "temperature": 25.5,
-      "apparent_temperature": 31.4,
+      "apparent_temperature": 31.6,
       "humidity": 97,
-      "wind_speed": 5.4,
+      "wind_speed": 4.8,
       "weather_code": 3,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     },
     {
       "name": "Ho Chi Minh City",
       "name_ja": "ホーチミン",
       "lat": 10.8231,
       "lon": 106.6297,
-      "temperature": 25.1,
+      "temperature": 25.0,
       "apparent_temperature": 31.0,
-      "humidity": 98,
-      "wind_speed": 4.9,
-      "weather_code": 80,
+      "humidity": 99,
+      "wind_speed": 3.6,
+      "weather_code": 3,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     },
     {
       "name": "Da Nang",
       "name_ja": "ダナン",
       "lat": 16.0544,
       "lon": 108.2022,
-      "temperature": 26.1,
-      "apparent_temperature": 29.9,
-      "humidity": 78,
-      "wind_speed": 8.0,
+      "temperature": 25.3,
+      "apparent_temperature": 29.3,
+      "humidity": 84,
+      "wind_speed": 7.6,
       "weather_code": 3,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     },
     {
       "name": "Hue",
       "name_ja": "フエ",
       "lat": 16.4637,
       "lon": 107.5909,
-      "temperature": 25.3,
-      "apparent_temperature": 28.5,
-      "humidity": 82,
-      "wind_speed": 11.0,
-      "weather_code": 2,
+      "temperature": 24.8,
+      "apparent_temperature": 28.7,
+      "humidity": 87,
+      "wind_speed": 8.3,
+      "weather_code": 1,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     },
     {
       "name": "Hai Phong",
       "name_ja": "ハイフォン",
       "lat": 20.8449,
       "lon": 106.6881,
-      "temperature": 25.9,
-      "apparent_temperature": 32.3,
+      "temperature": 25.0,
+      "apparent_temperature": 30.6,
       "humidity": 99,
-      "wind_speed": 4.9,
-      "weather_code": 3,
+      "wind_speed": 7.1,
+      "weather_code": 53,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     },
     {
       "name": "Can Tho",
@@ -75,23 +75,23 @@
       "temperature": 25.5,
       "apparent_temperature": 31.3,
       "humidity": 94,
-      "wind_speed": 4.0,
+      "wind_speed": 4.1,
       "weather_code": 3,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     },
     {
       "name": "Nha Trang",
       "name_ja": "ニャチャン",
       "lat": 12.2388,
       "lon": 109.1968,
-      "temperature": 26.5,
-      "apparent_temperature": 33.6,
+      "temperature": 26.3,
+      "apparent_temperature": 33.2,
       "humidity": 99,
-      "wind_speed": 4.0,
-      "weather_code": 3,
+      "wind_speed": 3.8,
+      "weather_code": 2,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     },
     {
       "name": "Da Lat",
@@ -99,12 +99,12 @@
       "lat": 11.9404,
       "lon": 108.4583,
       "temperature": 16.6,
-      "apparent_temperature": 16.9,
+      "apparent_temperature": 16.5,
       "humidity": 97,
-      "wind_speed": 11.6,
+      "wind_speed": 15.2,
       "weather_code": 3,
       "is_day": 0,
-      "local_time": "2026-07-08T03:45"
+      "local_time": "2026-07-08T05:15"
     }
   ]
 }
